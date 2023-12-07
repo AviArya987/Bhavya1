@@ -1,0 +1,332 @@
+﻿@model Ecommerce.Models.ProductPermission
+@{
+    ViewData["Title"] = "Home Page";
+    Layout = "_Layout";
+}
+
+<div id="carouselExampleCrossfade" class="carousel slide carousel-fade mb-3" data-mdb-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+        <button type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button"
+                data-mdb-target="#carouselExampleCrossfade"
+                data-mdb-slide-to="2"
+                aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://static.vecteezy.com/system/resources/previews/004/299/835/original/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-free-vector.jpg" class="d-block w-100" alt="Wild Landscape" />
+        </div>
+        <div class="carousel-item">
+            <img src="https://img.freepik.com/free-vector/flat-horizontal-sale-banner-template-with-photo_23-2149000923.jpg?w=1380&t=st=1688895064~exp=1688895664~hmac=39efa48fe922a7f1c396196b4e863b1c46950c7a7d380a01deb44a521bd3b7cb" class="d-block w-100" alt="Camera" />
+        </div>
+        <div class="carousel-item">
+            <img src="https://t4.ftcdn.net/jpg/03/06/69/49/360_F_306694930_S3Z8H9Qk1MN79ZUe7bEWqTFuonRZdemw.jpg" class="d-block w-100" alt="Exotic Fruits" />
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCrossfade" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div class="container-fluid mt-5 row">
+    <!--Main Navigation-->
+    <header class="col-md-3 col-sm-0">
+        <!-- Sidebar -->
+
+        <div class="container-fluid mt-100">
+
+
+            <div class="row d-flex justify-content-center ">
+
+                <div class="">
+
+
+                    <div class="card">
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapse_aside1" data-abc="true" aria-expanded="true" class="expanded">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Categories </h6>
+                                </a>
+                            </header>
+                            <div class="filter-content expanded" id="collapse_aside1" style="">
+                                <div class="card-body">
+
+                                    <ul class="list-menu">
+                                        <li><a href="#" data-abc="true">Electronics </a></li>
+                                        <li><a href="#" data-abc="true">Watches  </a></li>
+                                        <li><a href="#" data-abc="true">Laptops </a></li>
+                                        <li><a href="#" data-abc="true">Clothes </a></li>
+                                        <li><a href="#" data-abc="true">Accessories </a></li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </article>
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapse_aside2" data-abc="true" aria-expanded="false" class="collapsed">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Price </h6>
+                                </a>
+                            </header>
+                            <div class="filter-content expanded" id="collapse_aside2" style="">
+                                <div class="card-body">
+                                    <input type="range" class="custom-range" min="0" max="100" name="">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label>Min</label>
+                                            <input class="form-control" placeholder="$0" type="number">
+                                        </div>
+                                        <div class="form-group text-right col-md-6">
+                                            <label>Max</label>
+                                            <input class="form-control" placeholder="$1,0000" type="number">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="highlight-button btn btn-medium button xs-margin-bottom-five" data-abc="true">Apply Now</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="collapse" data-target="#collapse_aside3" data-abc="true" aria-expanded="false" class="collapsed">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Size </h6>
+                                </a>
+                            </header>
+                            <div class="filter-content expanded" id="collapse_aside3" style="">
+                                <div class="card-body">
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> XS </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> SM </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> LG </span>
+                                    </label>
+
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> XXL </span>
+                                    </label>
+                                    <label class="checkbox-btn">
+                                        <input type="checkbox">
+                                        <span class="btn btn-light"> XXXL </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="filter-group">
+                            <header class="card-header">
+                                <a href="#" data-toggle="expanded" data-target="#collapse_aside4" data-abc="true" class="expanded" aria-expanded="true">
+                                    <i class="icon-control fa fa-chevron-down"></i>
+                                    <h6 class="title">Rating </h6>
+                                </a>
+                            </header>
+                            <div class="filter-content expanded" id="collapse_aside4" style="">
+                                <div class="card-body">
+                                    <label class="custom-control">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Better  </div>
+                                    </label>
+
+                                    <label class="custom-control">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Best </div>
+                                    </label>
+
+                                    <label class="custom-control">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Good</div>
+                                    </label>
+
+                                    <label class="custom-control">
+                                        <input type="checkbox" checked="" class="custom-control-input">
+                                        <div class="custom-control-label">Not good</div>
+                                    </label>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Sidebar -->
+
+    </header>
+    <!--Main Navigation-->
+    @*products*@
+    <div class="col-md-9 col-sm-12 row">
+        @foreach (var item in Model.lstproducts)
+        {
+        <div class="col-md-4 col-lg-4 mb-4 mb-lg-4">
+            <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                    <p class="lead mb-0">Today's Combo Offer</p>
+                    <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                         style="width: 35px; height: 35px;">
+                        <p class="text-white mb-0 small">x4</p>
+                    </div>
+                </div>
+                    <img src=@item.ImageUrl class="card-img-top"
+                     alt="Laptop" />
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                        <p class="small text-danger"><s>@item.Price</s></p>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-3">
+                        <h5 class="mb-0">@item.Name</h5>
+                        <h5 class="text-dark mb-0">@item.Price</h5>
+                    </div>
+
+                    <div class="d-flex justify-content-between mb-2">
+                        <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                        <div class="ms-auto text-warning">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between mb-3">
+                            <button type="button" class="btn btn-primary btn-rounded w-100 addtocart" id="">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+    @*products*@
+
+    <div class="container">
+        <div class="container py-5 h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 d-none" id="divlogin">
+                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <h3 class="mb-5">Sign in</h3>
+
+                            <div class="form-outline mb-4">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typeEmailX-2" id="txtmobile">Mobile</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typePasswordX-2" id="txtpassword">Password</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-between mb-4">
+                                <div class="d-flex">
+                                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                                    <label class="form-check-label" for="form1Example3"> Remember password </label>
+                                </div>
+                                
+                                <a class="form-check-label" id="form1Example4" style="color: #3b5998;"> Register ? </a>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+
+                            <hr class="my-4">
+
+                            <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+                                    type="submit">
+                                <i class="fab fa-google me-2"></i> Sign in with google
+                            </button>
+                            <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                                    type="submit">
+                                <i class="fab fa-facebook-f me-2"></i>Sign in with facebook
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5 d-none" id="divregister">
+                    <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                        <div class="card-body p-5 text-center">
+
+                            <h3 class="mb-5">Sign Up</h3>
+
+                            <div class="form-outline mb-4">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typeEmailX-2" id="txtname">Name</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typeEmailX-2" id="txtmobile">Mobile</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typePasswordX-2" id="txtpassword">Password</label>
+                            </div>
+
+                            <div class="form-outline mb-4">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                                <label class="form-label" for="typePasswordX-2" id="txtconfirmpassword">Confirm Password</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-between mb-4">
+                                <div class="d-flex">
+                                    <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                                    <label class="form-check-label" for="form1Example3"> Remember password </label>
+                                </div>
+
+                                <a class="form-check-label" id="form1Example4" style="color: #3b5998;">Already a member Login ? </a>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+
+                            <hr class="my-4">
+
+                            <button class="btn btn-lg btn-block btn-primary" style="background-color: #dd4b39;"
+                                    type="submit">
+                                <i class="fab fa-google me-2"></i> Sign in with google
+                            </button>
+                            <button class="btn btn-lg btn-block btn-primary mb-2" style="background-color: #3b5998;"
+                                    type="submit">
+                                <i class="fab fa-facebook-f me-2"></i>Sign in with facebook
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Main layout-->
+    <main style="margin-top: 58px;">
+        <div class="container pt-4"></div>
+    </main>
+    <!--Main layout-->
+</div>
